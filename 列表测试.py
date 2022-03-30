@@ -1,0 +1,20 @@
+listTemp=["star",30,40,50]#定义一个列表
+print(listTemp[1:3])#从索引值为1处开始获取元素，一直到索引值为3-1处
+print(listTemp[-3:-1])#-1代表的是列表中的最后一个元素
+listTemp.append("Qeen")#默认在列表的末尾增加一个元素
+listTemp.insert(1,"Ace")#在索引1的位置添加字符串Ace元素
+print(len(listTemp))#获取列表元素的长度，即有多少个元素
+print(listTemp[1])#取索引为1的元素的值
+print(listTemp)#打印列表中的所有元素
+del listTemp[2]#删除索引为2的元素
+print(listTemp)#打印列表中的所有元素
+listTemp.pop(1)#删除索引为1的元素
+print(listTemp)#打印列表中的所有元素
+listTemp.remove("star")#删除指定值的元素
+print(listTemp)
+listTemp[1]="change"#修改索引为1的值为change
+print(listTemp)
+print(type(listTemp))#获取列表的数据类型
+listTemp=1
+print(listTemp)
+print(type(listTemp))
