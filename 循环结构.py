@@ -31,8 +31,58 @@ print("最大值为：",maxTemp2)
 i=0
 while i<10:
     if(i==3):
+        i+=1
         continue
     if(i==8):
+       
         break
     print(i,end=',')
     i+=1
+
+#模拟银行存取款
+card1="0001"
+pwd1="123456"
+balance1=10000
+card2="0002"
+pwd2="123456"
+balance2=10000
+while(True):
+    print("欢迎来到python银行")
+    card=input("请输入卡号:")
+    pwd=input("请输入密码:")
+    ban=0
+    if card==card1 and pwd==pwd1:
+        ban=balance1
+    elif card==card2 and pwd==pwd2:
+        ban=balance2
+    else:
+        print("卡号和密码输入错误,请重新输入")
+        continue
+    while(True):
+       num= input("请输入要办理的业务:1.存款 2.取款 3.退卡")
+       if num=="1":
+           inn=float(input("请输入存款金额:"))
+           if inn<=0:
+               print("存款金额请大于0.")
+               continue
+           else:
+                ban=ban+inn
+                print("存款成功,存入:",inn,"余额:",ban)
+                continue
+
+       elif num=="2":
+           out=float(input("请输入取款金额:"))
+           if out>ban:
+               print("余额不足.")
+               continue
+           else:
+                ban=ban-out
+                print("取款成功,取出:",out,"余额:",ban)
+                continue
+       elif num=="3":
+           print("请收好卡片,欢迎下次再来.")
+           break
+       else:
+           print("输入有误.")
+           continue
+
