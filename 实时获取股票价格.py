@@ -29,9 +29,9 @@ def StarMain(StockCode):
 	buypoint=70.0
 	salepoint=73.0
 	if Stock.currentPrice>=salepoint:
-	   print("已经到达卖点！")
+		print("已经到达卖点！")
 	elif Stock.currentPrice<=buypoint:
-	   print("已经跌到买点，赶紧筹集资金！")
+		print("已经跌到买点，赶紧筹集资金！")
 	else:
 	   print(GetStockData.desc)
 

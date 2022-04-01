@@ -27,9 +27,9 @@ def StarMain(StockCodes):
 	for StockCode in StockCodes:
 		GetStockData=GetRealTimeData(StockCode)
 		if StockCode.currentPrice>=StockCode.salepoint:
-		   print(StockCode.stockName,"已经到达卖点！")
+			print(StockCode.stockName,"已经到达卖点！")
 		elif StockCode.currentPrice<=StockCode.buypoint:
-		   print(StockCode.stockName,"已经跌到买点，赶紧筹集资金！")
+			print(StockCode.stockName,"已经跌到买点，赶紧筹集资金！")
 		else:
 		   print(GetStockData.desc)
 

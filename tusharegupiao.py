@@ -1,4 +1,4 @@
-import tushare
+import tushare #免费的财经接口包  #安装 pip install tushare
 import time
 i=0
 while(i<20):
@@ -11,8 +11,8 @@ while(i<20):
      buypoint=73.0
      salepoint=68.0
      if(currentPrice>=buypoint):
-     	print("已经到了买点！")
+          print("已经到了买点！")
      elif(currentPrice<=salepoint):
-     	print("已经到了卖点！")
+          print("已经到了卖点！")
      i=i+1
      time.sleep(2)
