@@ -1,5 +1,9 @@
 import time
+import random
 
+num=random.randint(1000,9999)#获取1000-9999之间的随机整数
+
+numstr=str(num)  #数字转换成字符串 用str
 time.sleep(1)  #延迟函数，延迟1秒
 
 a=3.12645
